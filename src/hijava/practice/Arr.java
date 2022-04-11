@@ -4,8 +4,27 @@ public class Arr {
     public static void main(String[] args) {
        // ex1();
        // ex2();
-        ex3();
+       // ex3();
+        ex4();
 
+    }
+
+    private static void ex4() {
+        Man arr3[] = new Man[9];
+        for(int i = 0; i < arr3.length; i++){
+            Man message =  new Man("김"+(i+1)+"수");
+            arr3[i] = message;
+        }
+        Man arr4[] = new Man[9];
+        for(int i = 0; i < arr3.length; i++){
+            //arr4[i] = arr3[i];  //shallow copy (얕은 복사)
+            arr4[i] = new Man(arr3[i].getName());   //deep copy (깊은 복사)
+        }
+
+        arr3[0].setName("정호석");
+        for (Man man : arr4){
+            System.out.println(man);
+        }
     }
 
     private static void ex3() {
