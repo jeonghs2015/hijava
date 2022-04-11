@@ -8,6 +8,7 @@ public class Arr {
        // ex4();
         ex5();
 
+
     }
 
     private static void ex5() {
