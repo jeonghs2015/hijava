@@ -5,8 +5,20 @@ public class Arr {
        // ex1();
        // ex2();
        // ex3();
-        ex4();
+       // ex4();
+        ex5();
 
+    }
+
+    private static void ex5() {
+        int[] arr1 = {10, 20, 30, 40, 50};
+        int[] arr2 = {1, 2, 3, 4, 5};
+        //System.arraycopy(from, startIndex, to, startIndex, count)
+        System.arraycopy(arr1,0, arr2, 2, 3);
+
+        for (int a : arr2){
+            System.out.println(a);
+        }
     }
 
     private static void ex4() {
@@ -18,7 +30,7 @@ public class Arr {
         Man arr4[] = new Man[9];
         for(int i = 0; i < arr3.length; i++){
             //arr4[i] = arr3[i];  //shallow copy (얕은 복사)
-            arr4[i] = new Man(arr3[i].getName());   //deep copy (깊은 복사)
+            arr4[i] = new Man(arr3[i].getName());   //deep copy (깊은 복사) - clone
         }
 
         arr3[0].setName("정호석");
