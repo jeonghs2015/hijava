@@ -1,13 +1,25 @@
 package hijava.oop;
 
 public class Son extends Mom{
+
+    public Son(){
+        super("아들이름");
+    }
+    public Son(String name){
+        super("아들이름");
+    }
+
     @Override
-    protected void eat() {
+    public void eat() {
         super.eat();
     }
 
     @Override
-    protected void say() {
+    public void say() {
         System.out.println("엄마~");
+    }
+
+    public void ttt(){
+        System.out.println("ttt");
     }
 }
