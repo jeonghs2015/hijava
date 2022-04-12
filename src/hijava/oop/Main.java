@@ -5,7 +5,18 @@ import hijava.practice.Man;
 import java.util.ArrayList;
 
 public class Main {
+
     public static void main(String[] args) {
+        // al();
+        Mom mom = new Mom();
+        Son son = new Son();
+
+        mom.say();
+        son.say();
+
+    }
+
+    private static void al() {
         ArrayList<Man> people = new ArrayList<>(9);
 
         for(int i = 0 ; i < 9 ; i++){
@@ -14,6 +25,5 @@ public class Main {
             people.add(m);
             System.out.println(people.get(i));
         }
-
     }
 }
