@@ -15,14 +15,14 @@ public class Main {
 
     private static void koreanAndAmerican() {
         Man korean = new Korean("홍길동");
-        Man american = new American("John");
+        American american = new American("John");
 
         sayHi(korean);
         sayHi(american);
 
        // korean.sayHello();
        // american.sayHello();
-
+        // dfdf
     }
 
     private static void sayHi(Man man) {
