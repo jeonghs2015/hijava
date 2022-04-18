@@ -8,9 +8,29 @@ public class Main {
 
     public static void main(String[] args) {
         // al();
-        momAndSon();
+        // momAndSon();
         //koreanAndAmerican();
+        eatTest();
 
+    }
+
+    private static void eatTest() {
+        Man korean = new Korean("홍길동");
+        American american = new American("John");
+
+        eat(american);
+        eat(korean);
+
+    }
+
+    private static void eat(Man m){
+        if(m instanceof Korean){
+            ((Korean)m).eatRice();
+        } else if(m instanceof American){
+            ((American)m).eatBread();
+        } else{
+            System.out.println("해당 인스턴스가 없습니다!");
+        }
     }
 
     private static void koreanAndAmerican() {

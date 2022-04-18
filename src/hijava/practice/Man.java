@@ -66,4 +66,5 @@ public class Man {
                 "잔액 = " + amount +
                 " }";
     }
+
 }
