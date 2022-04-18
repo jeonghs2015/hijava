@@ -8,8 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
         // al();
-        // momAndSon();
-        koreanAndAmerican();
+        momAndSon();
+        //koreanAndAmerican();
 
     }
 
@@ -31,10 +31,25 @@ public class Main {
 
     private static void momAndSon() {
         Mom mom = new Mom();
-        Son son = new Son();
+        Mom son = new Son();
 
         mom.say();
         son.say();
+        eat(mom);
+        eat(son);
+    }
+
+    private static void eat(Mom m){
+        if(m instanceof Son)
+            m = (Son)m;
+
+        if(m instanceof Son) {
+            System.out.println("먹어라 아들~");
+        }else if (m instanceof Mom){
+            System.out.println("드세요 엄마~");
+        } else {
+            System.out.println("누구신진 모르겠지만 드세요~");
+        }
     }
 
     private static void al() {
