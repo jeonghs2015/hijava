@@ -7,16 +7,24 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
+        weight();
         // al();
         // momAndSon();
         //koreanAndAmerican();
         // eatTest();
-        AbstSuper sp = new AbstChild();
+        /*AbstSuper sp = new AbstChild();
         int i = 5;
         int j =10;
-
         System.out.println("min = " + sp.min(i, j));
-        System.out.println("max = " + sp.max(i, j));
+        System.out.println("max = " + sp.max(i, j));*/
+
+    }
+    private static void weight(){
+        Weight guen = new Guen();
+        Weight pound = new Pound();
+        int cnt = 5;
+        System.out.println("Guen = " + guen.getGram(cnt));
+        System.out.println("Pound = " + pound.getGram(cnt));
     }
 
     private static void eatTest() {
