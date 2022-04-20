@@ -10,8 +10,13 @@ public class Main {
         // al();
         // momAndSon();
         //koreanAndAmerican();
-        eatTest();
+        // eatTest();
+        AbstSuper sp = new AbstChild();
+        int i = 5;
+        int j =10;
 
+        System.out.println("min = " + sp.min(i, j));
+        System.out.println("max = " + sp.max(i, j));
     }
 
     private static void eatTest() {
