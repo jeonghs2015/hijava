@@ -7,7 +7,8 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        weight();
+        animal();
+        //weight();
         // al();
         // momAndSon();
         //koreanAndAmerican();
@@ -19,6 +20,17 @@ public class Main {
         System.out.println("max = " + sp.max(i, j));*/
 
     }
+    private static void animal(){
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+        barkAnimal(dog);
+        barkAnimal(cat);
+    }
+
+    private static void barkAnimal(Animal ani) {
+        ani.bark();
+    }
+
     private static void weight(){
         Weight guen = new Guen();
         Weight pound = new Pound();
