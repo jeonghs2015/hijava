@@ -7,7 +7,8 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        animal();
+        netsport();
+        //animal();
         //weight();
         // al();
         // momAndSon();
@@ -20,6 +21,22 @@ public class Main {
         System.out.println("max = " + sp.max(i, j));*/
 
     }
+
+    private static void netsport() {
+        NetSport pp = new PingPong();
+        NetSport te = new Tennis();
+        NetSport vb = new VolleyBall();
+        System.out.println("PingPong");
+        pp.play();
+        System.out.println("--------------------");
+        System.out.println("Tennis");
+        te.play();
+        System.out.println("--------------------");
+        System.out.println("VolleyBall");
+        vb.play();
+        System.out.println("--------------------");
+    }
+
     private static void animal(){
         Animal dog = new Dog();
         Animal cat = new Cat();
