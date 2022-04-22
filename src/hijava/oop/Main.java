@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        netsport();
+        //netsport();
         //animal();
         //weight();
         // al();
@@ -20,6 +20,16 @@ public class Main {
         System.out.println("min = " + sp.min(i, j));
         System.out.println("max = " + sp.max(i, j));*/
 
+        software();
+
+    }
+
+    private static void software() {
+        SoftWare site = new WebSite();
+        SoftWare app = new MobileApp();
+
+        site.product();
+        app.product();
     }
 
     private static void netsport() {
