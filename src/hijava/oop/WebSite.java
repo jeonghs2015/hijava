@@ -1,5 +1,5 @@
 package hijava.oop;
-//추상클래스
+//추상클래스 생성
 public class WebSite extends SoftWare{
     @Override
     public void plan() {
