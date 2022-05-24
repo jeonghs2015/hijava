@@ -13,6 +13,6 @@ public class WebSite extends SoftWare{
 
     @Override
     public void release() {
-        System.out.println("Site 출시(deploy 배포) 정식 출시");
+        System.out.println("Site 출시(deploy 배포)출시");
     }
 }
